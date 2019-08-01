@@ -14,6 +14,47 @@
     <p>You successfully cloned a Git repository from the server to your computer&rsquo;s hard drive. Now, let&rsquo;s celebrate for a few seconds by looking at cute animals.</p>
   </div>
 
+    <div class="video">
+    <video src="animation.mp4"></video> 
+        <div class="controllers">
+          
+          <!-- Progress Bar -->
+           <div class="progress">
+               <div class="progress__field">
+                   
+               </div>
+           </div>
+           
+           <!-- Play Button -->
+            <button id="play" class="controllers__playButton">▶</button>
+            
+           <!-- Volume Input -->
+           
+           <input id="vol" class="slider" type="range" max="1" min="0" step="0.01" value="1">
+           
+            <!-- Backward Button -->
+            <button class="step" data-step="-5">⏪</button>
+           
+            <!-- Forward Button -->
+            <button class="step" data-step="5">⏩</button>            
+
+            <!-- Speed Button -->   
+              
+            <input id="speed" class="speed" type="range" max="4" min="1" step="1" value="1" list="tickmarks">
+               
+            <datalist id="tickmarks">
+                <option value="1" label="x1">
+                <option value="2" label="x2">
+                <option value="3" label="x3">
+                <option value="4" label="x4">
+            </datalist>
+               
+            <span class="videotime"> </span>
+
+               
+        </div> 
+    </div>
+
   <div class="photo">
     <img src="images/dog.jpg" alt="A cute dog.">
   </div>
@@ -21,7 +62,7 @@
   <div class="photo">
     <img src="images/cat-dog.jpg" alt="A dog and cat.">
   </div>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="app.js" type="text/javascript"></script>
 </body>
 </html>

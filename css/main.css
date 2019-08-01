@@ -45,3 +45,124 @@ h1 {
   max-width: 800px;
   margin: 0 auto 28px auto;
 }
+
+.video{
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+    border-top: 8px solid #4a4a4a;
+    border-bottom: 8px solid #4a4a4a;
+    max-width: 800px;
+    margin: 0 auto 28px auto;
+}
+
+.video > video{
+    width: 100%;
+}
+
+.video:hover .controllers{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+.controllers{
+
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    opacity: 0
+}
+
+.controllers:hover{
+    opacity: 1;
+    transition: .5s;
+}
+
+.controller{
+    
+}
+
+.progress{
+    background: #efefef;
+    height: 10px;
+}
+
+.progress__field{
+    height: 100%;
+    background-color: #3cb371;
+    width: 0;
+}
+
+.controllers__playButton{
+    border-radius: 50%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 20%;
+  height: 15px;
+  border-radius: 5px;   
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.speed {
+  -webkit-appearance: none;
+  width: 20%;
+  height: 5px;
+  border-radius: 5px;   
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.speed::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: #344196;
+  cursor: pointer;
+}
+
+.speed::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #344196;
+  cursor: pointer;
+}
+
+.videotime{
+    
+    color: black;
+    font-weight: 400;
+    font-family: 'Roboto' , sans-serif;
+    background-color:beige;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 12px;
+}
